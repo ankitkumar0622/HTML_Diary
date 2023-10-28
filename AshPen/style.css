@@ -1,0 +1,182 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  background-color: black;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+}
+
+#imageContainer {
+  margin: 10px;
+}
+#imageContainer img {
+  height: 37px;
+}
+
+#title h1 {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 60px;
+  top: 5px;
+  color: white;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-right: 10px;
+}
+#title h2 {
+  position: absolute;
+  left: 60px;
+  top: 15px;
+  align-items: center;
+  color: lightgray;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 20;
+}
+.navButtonsContainer {
+  display: flex;
+}
+.navButton {
+  padding: 10px;
+  margin: 2px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+/* To stick the last three buttons to the right end */
+.navButtonsContainer {
+  position: absolute;
+  right: 10px;
+}
+
+#editorsSection {
+  border: 2px solid rgb(102, 107, 122);
+  background-color: rgb(29, 30, 34);
+  height: 45vh;
+  display: flex;
+}
+
+.codeEditor {
+  margin: 10px;
+  width: 32%;
+  border: solid 1px rgb(102, 107, 122);
+  background-color: rgb(49, 50, 55);
+  display: flex;
+  flex-direction: column;
+}
+.codeEditorNavbar {
+  background-color: rgb(29, 30, 34);
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+.langLogo img {
+  height: 30px;
+  margin: 10px;
+}
+.langName {
+  color: white;
+  margin-left: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.codeArea {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.codeArea textarea {
+  /* resize: none; */
+  background: rgb(30, 30, 30);
+  /* font-family: "Courier New", Courier, monospace; */
+  color: white;
+  width: 97%;
+  height: 97%;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.codeEditorButtons {
+  margin-left: auto;
+}
+.codeEditorButtons button {
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#resultSection {
+  /* border: solid 2px red; */
+  width: 100%;
+  height: 100%;
+}
+
+#resultContainer {
+  background: gray;
+  padding: 10px;
+
+  /* margin: 3px; */
+}
+
+#viewer {
+  width: 100%;
+  height: 100vh;
+}
+#footer {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(29, 30, 34);
+  bottom: 0;
+  padding: 5px;
+}
+#footer button {
+  background-color: rgb(90, 95, 115);
+  color: white;
+  margin-left: 2px;
+}
+#footer span {
+  /* //align in center */
+  margin-left: 70px;
+  color: white;
+  font-family: monospace;
+}
+
+#resizer {
+  display: flex;
+  width: 100%;
+  height: 8px;
+  background-color: rgb(102, 107, 122);
+  cursor: row-resize;
+  justify-content: center;
+}
+
+#resizer div {
+  display: flex;
+  align-items: end;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+#consoleSection {
+  flex: ;
+}
+#console textarea {
+  width: 97%;
+  height: 97%;
+  resize: none;
+  box-sizing: border-box;
+}
