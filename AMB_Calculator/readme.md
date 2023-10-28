@@ -1,0 +1,1 @@
+amb calculator is a web app used to calculate average monthly balance.
