@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navb -->
+    <div id="navbar">
+      <div id="title">
+        <div id="imageContainer">
+          <img src="https://github.com/ashutosh7i.png" />
+        </div>
+        <h1>PenName</h1>
+        <h2>Aashutosh Soni</h2>
+        <div class="navButtonsContainer">
+          <button class="navButton" style="background-color: lightgray">
+            Setting
+          </button>
+          <button class="navButton" style="background-color: lightseagreen">
+            Save
+          </button>
+          <button class="navButton" style="background-color: lightgreen">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Code Editor Section -->
+    <div id="editorsSection">
+      <div class="codeEditor">
+        <div class="codeEditorNavbar">
+          <div class="langLogo"><img src="./assets/html.png" /></div>
+          <p class="langName">HTML</p>
+          <div class="codeEditorButtons">
+            <button>S</button> <button>O</button>
+          </div>
+        </div>
+        <div class="codeArea">
+          <textarea
+            name=""
+            id="htmlCode"
+            cols="1"
+            rows="1"
+            placeholder="code HTML Here"
+            oninput="update(0)"
+            onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"
+          ></textarea>
+        </div>
+      </div>
+      <div class="codeEditor">
+        <div class="codeEditorNavbar">
+          <div class="langLogo"><img src="./assets/css.png" /></div>
+          <p class="langName">CSS</p>
+          <div class="codeEditorButtons">
+            <button>S</button> <button>O</button>
+          </div>
+        </div>
+        <div class="codeArea">
+          <textarea
+            name=""
+            id="cssCode"
+            cols="1"
+            rows="1"
+            placeholder="code CSS Here"
+            oninput="update(0)"
+            onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"
+          ></textarea>
+        </div>
+      </div>
+      <div class="codeEditor">
+        <div class="codeEditorNavbar">
+          <div class="langLogo"><img src="./assets/js.png" /></div>
+          <p class="langName">JS</p>
+          <div class="codeEditorButtons">
+            <button>S</button> <button>O</button>
+          </div>
+        </div>
+        <div class="codeArea">
+          <textarea
+            name=""
+            id="jsCode"
+            cols="1"
+            rows="1"
+            placeholder="code Javascript Here"
+            oninput="update(0)"
+            onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <!-- Resizer button here -->
+    <div id="resizer"><div>...</div></div>
+    <!-- Result Section -->
+    <div id="resultSection">
+      <div id="resultContainer">
+        <!-- Results will be shown here -->
+        <iframe id="viewer" ></iframe>
+      </div>
+    </div>
+    <!-- Console Section -->
+    <div id="consoleSection">
+      <textarea readonly name="" id="" cols="1" rows="1">tstst</textarea>
+    </div>
+    <!-- Footer Section -->
+    <div id="footer">
+      <button class="footerButtons">console</button>
+      <button class="footerButtons">Assets</button>
+      <button class="footerButtons">Shortcuts</button>
+      <span>Made with💖,☕&🚰 by Ashutosh7i🚀</span>
+    </div>
+  </body>
+
+ <script defer src="./handleResize.js">//this code handles editor/result resize functionality </script>
+ <script defer src="./renderEngine.js">//this code renders the html css and js in the iframe </script>
+</body>
+</html>
